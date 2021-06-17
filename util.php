@@ -116,4 +116,41 @@ function getUserSession()
     return $user;
 }
 
+
+/**
+ * 画像アップロード
+ * 
+ * @param array $user
+ * @param array $file
+ * @return string $type
+ * @return string 画像のファイル名を返す
+ */
+function uploadImage(array $user, array $file, string $type) 
+{
+    // strrchrで.を指定して画像のファイル名から拡張子を取得（例：.png）
+    $image_extension = strrchr($file['name'], '.');
+
+    // 画像のファイル名を作成 (YmdHis 例：2021-01-01 00:00:00)
+    $image_name = $user['id'] . '_' . date('YmdHis') . $image_extension;
+
+    // 保存先のディレクトリ
+    $directory = '../Views/img_uploaded/' . $type . '/';
+
+    // 画像のパス
+    $image_path = $directory . $image_name;
+
+    // 画像の設置
+    move_uploaded_file($file['tmp_name'], $image_path);
+
+    // 画像ファイルかチェック
+    if(exif_imagetype($image_path)) {
+        return $image_name;
+    }
+
+    // 画像ファイル以外の画像ファイル以外の場合
+    echo '選択されたファイルが画像ではないため処理を停止しました。';
+    exit;
+    
+}
+
 ?>
