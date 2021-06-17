@@ -1,7 +1,7 @@
 <?php
 ////////
 //便利な関数
-////////
+///////
 /**
  * 画像ファイル名から画像のURLを生成
  * 
@@ -134,7 +134,7 @@ function uploadImage(array $user, array $file, string $type)
     $image_name = $user['id'] . '_' . date('YmdHis') . $image_extension;
 
     // 保存先のディレクトリ
-    $directory = '../Views/img_uploaded/' . $type . '/';
+    $directory = '../views/img_uploaded/' . $type . '/';
 
     // 画像のパス
     $image_path = $directory . $image_name;
