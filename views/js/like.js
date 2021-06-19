@@ -28,7 +28,7 @@ $(function () {
                     this_obj.data('like-id', null);
  
                     // いいね！ボタンの色をグレーに変更
-                    $(this).find('img').attr('src', '../Views/img/icon-heart.svg');
+                    $(this).find('img').attr('src', '../views/img/icon-heart.svg');
  
                 }
                 ).fail((data) => {
@@ -53,7 +53,7 @@ $(function () {
                     this_obj.data('like-id', data['like_id']);
  
                     // いいね！ボタンの色を青に変更
-                    $(this).find('img').attr('src', '../Views/img/icon-heart-twitterblue.svg');
+                    $(this).find('img').attr('src', '../views/img/icon-heart-twitterblue.svg');
                 }
                 ).fail((data) => {
                     alert('処理中にエラーが発生しました。');
