@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- modal fadeはフェードインしてモーダルが表示される! -->
+                    <!-- modal fadeはフェードインしてモーダルが表示される -->
                     <?php endif; ?>
                 </div>
 
