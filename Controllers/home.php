@@ -22,13 +22,13 @@ if (!$user) {
     exit;
 }
 
-// 自分がフォローしているユーザーID一覧を表示
-$followin_user_ids = findFollowingUserIds($user['id']);
+// 自分がフォローしているユーザーID一覧を取得
+$following_user_ids = findFollowingUserIds($user['id']);
 // 自分のツイートも表示するために自分のIDも追加
-$followin_user_ids[] = $user['id'];
-
+$following_user_ids[] = $user['id'];
+ 
 // 画面表示
 $view_user = $user;
-//ツイート一覧
-$view_tweets = findTweets($user, null, $followin_user_ids); // 第二引数は検索キーワードなのでnull
-include_once '../views/home.php';
+// ツイート一覧
+$view_tweets = findTweets($user, null, $following_user_ids); // 第二引数は検索キーワードなのでnull
+include_once '../Views/home.php';
