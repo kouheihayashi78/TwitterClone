@@ -16,7 +16,7 @@ include_once('../util.php');
 <body class = "signup text-center"><!--text-center 中央に寄せる -->
     <main class="form-signup">
         <form action="sign-up.php" method="post">
-            <img src="/TWITTERCLONE/views/img/logo-white.svg" alt="" class="logo-white">
+            <img src="/Twitterclone/views/img/logo-white.svg" alt="" class="logo-white">
             <h1>アカウントを作る</h1>
             <input type="text" class="form-control" name="nickname" placeholder="ニックネーム" maxlength="50" required autofocus><!--form-control 綺麗に見せる required 必須入力欄！ -->
             <input type="text" class="form-control" name="name" placeholder="ユーザー名、例)techis132" maxlength="50" required>
