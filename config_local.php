@@ -5,7 +5,7 @@ ini_set('display_errors',1);
 // 日本時間で表示
 date_default_timezone_set('Asia/Tokyo');
 //URLディレクトリ設定
-define('HOME_URL','/TwitterClone/');
+define('HOME_URL','/TWITTERCLONE/');
 // データベースの接続情報
 define('DB_HOST', 'localhost');
 define('DB_USER', 'dbuser');
