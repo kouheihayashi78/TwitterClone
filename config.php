@@ -12,4 +12,5 @@ define('DB_USER', 'hayashi');
 define('DB_PASSWORD', 'hayashipass');
 define('DB_NAME', 'twitter_clone');
 
+
 ?>
