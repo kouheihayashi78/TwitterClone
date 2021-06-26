@@ -12,4 +12,5 @@ define('DB_USER', 'dbuser');
 define('DB_PASSWORD', 't;DC&<*Sk8yn');
 define('DB_NAME', 'twitter_clone');
 
+
 ?>

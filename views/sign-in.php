@@ -10,7 +10,7 @@
 <body class = "signup text-center"><!--text-center 中央に寄せる -->
     <main class="form-signup">
         <form action="sign-in.php" method="post">
-            <img src="/TWITTERCLONE/views/img/logo-white.svg" alt="" class="logo-white">
+            <img src="/Twitterclone/views/img/logo-white.svg" alt="" class="logo-white">
             <h1>Twitterクローンにログイン</h1>
 
             <?php if(isset($view_try_login_result) && $view_try_login_result === false): ?>
