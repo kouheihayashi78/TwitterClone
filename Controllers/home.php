@@ -31,4 +31,4 @@ $following_user_ids[] = $user['id'];
 $view_user = $user;
 // ツイート一覧
 $view_tweets = findTweets($user, null, $following_user_ids); // 第二引数は検索キーワードなのでnull
-include_once '../Views/home.php';
+include_once '../views/home.php';
